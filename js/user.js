@@ -7,7 +7,7 @@ let currentUser;
  * User login/signup/login
  */
 
-/** Handle login form submission. If login ok, sets up the user instance */
+// Handle login form submission. If login ok, sets up the user instance
 
 async function login(evt) {
   console.debug("login", evt);
@@ -29,7 +29,7 @@ async function login(evt) {
 
 $loginForm.on("submit", login);
 
-/** Handle signup form submission. */
+// Handle signup form submission
 
 async function signup(evt) {
   console.debug("signup", evt);
@@ -120,7 +120,7 @@ async function updateUIOnUserLogin() {
   generateUserProfile();
 }
 
-/** Show a "user profile" part of page built from the current user's info. */
+// Show a "user profile" part of page built from the current user's info
 
 function generateUserProfile() {
   console.debug("generateUserProfile");

@@ -4,7 +4,7 @@
  * Handling navbar clicks and updating navbar
  */
 
-/** Show main list of all stories when click site name */
+// Show main list of all stories when click site name
 
 function navAllStories(evt) {
   console.debug("navAllStories", evt);
@@ -14,7 +14,7 @@ function navAllStories(evt) {
 
 $body.on("click", "#nav-all", navAllStories);
 
-/** Show login/signup on click on "login" */
+// Show login/signup on click on "login"
 
 function navLoginClick(evt) {
   console.debug("navLoginClick", evt);
@@ -25,7 +25,7 @@ function navLoginClick(evt) {
 
 $navLogin.on("click", navLoginClick);
 
-/** When a user first logins in, update the navbar to reflect that. */
+// When a user first logins in, update the navbar to reflect that
 
 function updateNavOnLogin() {
   console.debug("updateNavOnLogin");
@@ -56,7 +56,7 @@ function navFavoritesClick(evt) {
 
 $body.on("click", "#nav-favorites", navFavoritesClick);
 
-/** Show My Stories on clicking "my stories" */
+// Show My Stories on clicking "my stories"
 
 function navMyStories(evt) {
   console.debug("navMyStories", evt);

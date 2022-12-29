@@ -3,7 +3,7 @@
 // This is the global list of the stories, an instance of StoryList
 let storyList;
 
-/** Get and show stories when site first loads. */
+// Get and show stories when site first loads
 
 async function getAndShowStoriesOnStart() {
   storyList = await StoryList.getStories();
@@ -41,7 +41,7 @@ function generateStoryMarkup(story, showDeleteBtn = false) {
     `);
 }
 
-/** Make delete button HTML for story */
+// Make delete button HTML for story
 
 function getDeleteBtnHTML() {
   return `
@@ -50,7 +50,7 @@ function getDeleteBtnHTML() {
       </span>`;
 }
 
-/** Make favorite/not-favorite star for story */
+// Make favorite/not-favorite star for story
 
 function getStarHTML(story, user) {
   const isFavorite = user.isFavorite(story);
@@ -61,7 +61,7 @@ function getStarHTML(story, user) {
       </span>`;
 }
 
-/** Gets list of stories from server, generates their HTML, and puts on page. */
+// Gets list of stories from server, generates their HTML, and puts on page
 
 function putStoriesOnPage() {
   console.debug("putStoriesOnPage");
@@ -77,7 +77,7 @@ function putStoriesOnPage() {
   $allStoriesList.show();
 }
 
-/** Handle deleting a story. */
+// Handle deleting a story
 
 async function deleteStory(evt) {
   console.debug("deleteStory");
